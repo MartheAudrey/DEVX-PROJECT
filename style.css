@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------Navbar design---------------- */
+.navbar
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f7f0ff;
+    font-family: 'PT Sans';
+    padding: 15px 0;
+}
+.logo
+{
+    font-weight: 800;
+}
+.navbar ul li
+{
+    list-style-type: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.pages ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.pages a 
+{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+.pages a:hover
+{
+    color: #60269e;
+}
+.pages a::after
+{
+    content: '';
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #60269e;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+}
+.pages a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.sign
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+.sign a:nth-child(2)
+{
+    background-color: #60269e;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 16px;
+    transition: transform 0.3s linear;
+}
+#sign-up:hover
+{
+    transform: translateY(5px);
+}
+.sign a:nth-child(1)
+{
+    transition: all 0.3s linear;
+}
+#sign-in:hover
+{
+    border: 2px solid #7f56d9;
+    border-radius: 8px;
+    padding: 8px 14px;
+}
+
+/* ----------------Fist container----------------- */
+.container1
+{
+    text-align: center;
+    margin: 80px auto;
+    max-width: 1000px;
+    font-family: 'PT Sans';
+}
+.container1 p:nth-child(2)
+{
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 73px;
+    color: #0d0b32;
+}
+.container1 p:nth-child(4)
+{
+    color: #555555;
+    font-size: 24px;
+    font-weight: 400;
+}
+.container1 button 
+{
+    border-radius: 16px;
+}
+.container1 button:nth-child(1)
+{
+    margin-bottom: 20px;
+    background: none;
+    border: 1px solid #60269e;
+    padding: 10px;
+}
+.container1 button:nth-child(5)
+{
+    margin-top: 30px;
+    background-color: #60269e;
+    border: none;
+    color: white;
+    padding: 10px;
+    height: 51px;
+    width: 187px;
+}
+
+
+/* --------------Second container design----------------- */
+.container2
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f0ff;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: 'PT Sans';
+}
+.text
+{
+    font-size: 45px;
+    font-weight: 700;
+    color: #0d0b32;
+}
+.duotone
+{
+    display: flex;
+    gap: 70px;
+}
+.duo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.symbol img
+{
+    width: 50px;
+    height: 50px;
+}
+.content p 
+{
+    line-height: 20px;
+}
+.content p:nth-child(1)
+{
+    font-weight: 700;
+    font-size: 24px;
+}
+.content p:nth-child(2)
+{
+    color: #60269e;
+    font-size: 10px;
+}
+
+/* -------------Third Container design-------------- */
+.container3
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'PT Sans';
+}
+.fisrt-content
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px;
+    gap: 60px;
+}
+.story
+{
+    text-align: left;
+    width: 500px;
+}
+.story h2
+{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 100px;
+    color: #0d0b32;
+}
+.story p:nth-child(2)
+{
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+.story p:nth-child(2) span
+{
+    color: #60269e;
+}
+.story p
+{
+    font-size: 24px;
+    font-weight: 400;
+    color: #555555;
+}
+.story p:nth-child(3)
+{
+    margin-top: 15px;
+}
+.story p:nth-child(4)
+{
+    margin-top: 25px;
+}
+.image img
+{
+    height: 450px;
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #555555;
+}
+.line
+{
+    width: 100%;
+    border-bottom: 0.5px solid #555555;
+}
+.second-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.title
+{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'PT Sans';
+}
+.advantages-container
+{
+    margin-top: 30px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chevron
+{
+    background-color: white;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #555555;
+    color: #555555;
+    font-weight: 700;
+    font-size: 25px;
+}
+#ch-1
+{
+    transform: translateX(20px);
+}
+#ch-2
+{
+    transform: translateX(-20px);
+}
+.advantages
+{
+    background-color: #f7f0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 50px 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #555555;
+}
+.advantages img
+{
+    margin-bottom: 10px;
+}
+#advantage-title
+{
+    font-size: 30px;
+    font-weight: 700;
+}
+.advantage-text
+{
+    margin-top: 20px;
+}
+.advantage-text p
+{
+    color: #000000;
+    opacity: 70%;
+    text-align: center;
+}
+
+
+/* ------------Forth container design--------------- */
+/* ---Join section--- */
+.container4
+{
+    background-color: #f7f0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.join
+{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'PT Sans';
+}
+.join-content, .join-image
+{
+    width: 400px;
+    padding: 20px;
+    margin: 0 50px;
+}
+.join-image
+{
+   position: relative;
+}
+.join-image img:nth-child(2)
+{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 50;
+}
+.join-content ul 
+{
+    padding-left: 50px;
+    color: #555555;
+}
+.join-content span
+{
+    font-weight: 600;
+}
+.join-image img:nth-child(1)
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 3rem;
+    z-index: 0;
+}
+.join-image img:nth-child(3)
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-top: 15rem;
+    right: 21rem;
+    z-index: 0;
+}
+
+/* ---Growth section--- */
+.growth 
+{
+    background-color: #60269e;
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+    border-radius: 20px;
+    font-family: 'PT Sans';
+    box-shadow: 5px 5px 10px #555555;
+}
+.growth-content
+{
+    width: 30%;
+    
+}
+.growth-content a
+{
+    text-decoration: none;
+    color: white;
+    border: 2px solid #f7f0ff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: transform 0.3s linear;
+}
+.growth-content a:hover
+{
+    background-color: #f7f0ff;
+    color: #60269e;
+    border: none;
+    transform: translateY(8px);
+}
+.growth-image img
+{
+    width: 500px;
+}
+
+/* ---Mentors section--- */
+.mentors
+{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#intro
+{
+    color: #555555;
+    width: 35%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'PT Sans'
+}
+.card-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 0 20px;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #80808069;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 5px 5px 10px #555555;
+}
+.photo
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 5px #555555;
+}
+.name 
+{
+    font-weight: 700;
+    font-family: 'Open Sans';
+}
+.role
+{
+    color: #5e00d0;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: 'Inter';
+}
+.description
+{
+    color: #555555;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 12px;
+}
+.full
+{
+    padding-bottom: 30px;
+}
+.icons
+{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.icons img
+{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* -----------Footer design-------------- */
+footer
+{
+    background-color: #0d0b32;
+    color: white;
+}
+
+/* ---Section1 design--- */
+.section1
+{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.logo2
+{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+.logo2 p
+{
+    color: #eaecf0;
+    font-family: 'Nunito';
+}
+#logo
+{
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    font-size: 25px;
+    padding-top: 3px;
+    margin-left: 10px;
+}
+.ellipse-container
+{
+    position: relative;
+    width: 600px;
+    height: 50px;
+}
+.ellipse
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 6px solid #7f56d9;
+    top: 0;
+    left: 30px;
+}
+.ellipse1
+{
+    z-index: 1;
+}
+.ellipse2
+{
+    width: 20px;
+    height: 20px;
+    border: 6px solid #ffffff36;
+    top: 0;
+    left: 45px;
+}
+.support-text
+{
+    font-family: 'Nunito';
+    width: 40%;
+}
+.line2
+{
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+}
+.other-pages
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+.page
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.link-title
+{
+    font-family: 'Nunito';
+    font-weight: 600;
+}
+.page a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter';
+    font-size: 12px;
+}
+
+/* ---Section2 design--- */
+.section2
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+.section2-text
+{
+    font-family: 'Nunito';
+}
+.icons-container
+{
+    display: flex;
+    gap: 15px;
+}
+.icons-container img
+{
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width:860px)
+{
+    .navbar, .sign
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .pages ul
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        margin: 30px 0;
+        
+    }
+    /*Container 1*/
+        .container1
+    {
+        text-align: center;
+        margin: 80px auto;
+        max-width: 1000px;
+        font-family: 'PT Sans';
+    }
+    .container1 p:nth-child(2)
+    {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        color: #0d0b32;
+    }
+    .container1 p:nth-child(4)
+    {
+        color: #555555;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    /*Container 2*/
+    .text
+    {
+        font-size: 25px;
+        font-weight: 700;
+        color: #0d0b32;
+        width: 80%;
+        text-align: center;
+    }
+    .duotone
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /*Container 3*/
+    .fisrt-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .story
+    {
+        text-align: center;
+        width: 500px;
+    }
+
+    /*Container 4*/
+    /*Join section*/
+    .join
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 50px;
+        font-family: 'PT Sans';
+    }
+    .title
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+    /*Growth section*/
+    .growth
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .growth-content
+    {
+        width: 70%;
+        text-align: center;
+    }
+    .growth-image
+    {
+        text-align: center;
+    }
+    .growth-image img
+    {
+        width: 70%;
+    }
+
+    /*Mentors section*/
+    .card-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #intro
+    {
+        width: 50%;
+    }
+
+    /*Footer*/
+    /*Section 1*/
+    .section1
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-text
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .logo-text p{
+        text-align: center;
+    }
+    .section2{
+        align-items: center;
+    }
+}
