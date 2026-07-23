@@ -635,6 +635,14 @@ footer
     height: 16px;
 }
 
+.icons-container a{
+    transition: border-bottom 0,3s ease;
+}
+
+.icons-container a:hover {
+    border-bottom: 2px solid #5e00d0;
+}
+
 @media (max-width:860px)
 {
     .navbar, .sign
